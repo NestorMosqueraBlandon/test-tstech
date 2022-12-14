@@ -1,12 +1,12 @@
 import styles from  './Loading.module.css'
 
-export const LoadingBox = () => {
+const Loader = () => {
   return (
     <div className={styles.loader_container}>
       <div className={styles.loader}></div>
-        <p>Cargando...</p>
+        <p>Loading...</p>
     </div>
   )
 }
 
-export default LoadingBox
+export default Loader

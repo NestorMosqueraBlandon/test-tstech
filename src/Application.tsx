@@ -1,16 +1,17 @@
 import { Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { LoadingBox } from "./components";
+import { Loader } from "./components";
+import { PublicRoutes } from "./constant-definitions";
+import Home from "./screens/Home";
 import NotFound from "./screens/NotFount";
 
 const Application = () => {
-
   return (
-    <Suspense fallback={<LoadingBox />}>
+    <Suspense fallback={<Loader />}>
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LoadingBox />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path={PublicRoutes.HOME} element={<Home />} />
+        <Route path={PublicRoutes.NOTFOUND} element={<NotFound />} />
       </Routes>
       </BrowserRouter>
     </Suspense>

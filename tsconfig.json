@@ -28,6 +28,7 @@
       "@reducers/*":["reducers/*"],
       "@context/*":["context/*"],
       "@utils/*":["utils/*"],
+      "@models/*":["models/*"],
     }
   },
   "include": ["src"],

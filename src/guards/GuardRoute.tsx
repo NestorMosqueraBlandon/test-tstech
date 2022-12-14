@@ -4,12 +4,10 @@ import { Navigate, Outlet } from 'react-router-dom'
 
 const GuardRoute = () => {
 
-    const userInfo = null;
-
-
+    const userInfo = null
   return (
     <div>
-        {userInfo? <Outlet /> : <Navigate replace to={PublicRoutes} />}
+        {userInfo? <Outlet /> : <Navigate replace to={PublicRoutes.HOME} />}
     </div>
   )
 }
