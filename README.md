@@ -32,3 +32,6 @@ or
 - vite
 - axios
 - Tailwind 
+
+
+Deployment is available: test-tstech.vercel.app
